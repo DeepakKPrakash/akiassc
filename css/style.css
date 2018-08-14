@@ -178,6 +178,7 @@ textarea.input {
 .navbar-brand {
   padding: 0;
   margin: 15px 0px;
+  padding-left: 100px;
 }
 
 .navbar-brand .logo {
@@ -185,7 +186,7 @@ textarea.input {
 }
 
 .navbar-brand .logo>img {
-  max-height: 50px;
+  max-height: 55px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -370,8 +371,9 @@ textarea.input {
 
 .home-content h1 {
   text-transform: capitalize;
-  font-weight: 900;
+  font-weight: 500;
   color: #FFF;
+  font-family: Century Gothic;
 }
 
 .home-content h4 {
@@ -836,18 +838,76 @@ textarea.input {
   margin-top: 60px;
 }
 
+
+.contactform{
+    background: #1d1d1d;
+    padding:81px 0 67px;
+}
+.contactInner h3 {
+    margin-bottom: 70px;
+    color: #f0ca4d
+}
+.contactForm{
+    text-align: left;
+    padding: 0px 212px;
+}
+.single_form {
+    margin-bottom: 22px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.single_form input[type='text'],
+.single_form input[type='email'],
+.single_form textarea{
+    width: 100%;
+    background: transparent;
+    height: 41px;
+    border: none;
+    border-bottom: 2px solid #292929;
+    font-size: 14px;
+}
+.single_form textarea{
+    resize: none;
+    height: 143px;
+    margin-bottom: 20px;
+}
+.single_form label{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: .8;
+    color: #fff;
+    cursor: pointer;
+}
+.contactForm input[type='submit']{
+    display: inline-block;
+  padding: 14px 50px;
+  background: #f0ca4d;
+  color: #FFF;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 2px;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+
+}
+
+.single_form input.reqError,
+.single_form textarea.reqError{
+    border-color: #f0ca4d;
+}
 /*=========================================================
 	CTA
 ===========================================================*/
 
 .cta-content h2 {
   font-size: 42px;
-  color: #FFF;
+  color: #fff ;
   text-transform: capitalize;
 }
 
 .cta-content p {
-  color: #fff;
+  color: #fff ;
 }
 
 .cta-content .video-play {
