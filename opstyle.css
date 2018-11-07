@@ -1,0 +1,12 @@
+#header.fixed-navbar {
+  position: fixed !important;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: rgb(240,202,77, 0.5);
+  -webkit-box-shadow: 0px 0px 3px #0003;
+  box-shadow: 0px 0px 3px #0003;
+  border-bottom: none;
+  -webkit-animation: slide-in 0.3s;
+  animation: slide-in 0.3s;
+}

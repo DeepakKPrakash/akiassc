@@ -10,9 +10,10 @@
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900" rel="stylesheet">
-
+    <link rel="stylesheet" type="text/css" href="style1.css">
 	<!-- Bootstrap -->
 	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
 
 	<!-- Owl Carousel -->
 	<link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
@@ -30,9 +31,12 @@
 			  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 			  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 			<![endif]-->
-</head>
+			
 <body>
 
+	<div id="overlay">
+		
+	</div>
 	<!-- Header -->
 	<header id="header" class="transparent-navbar">
 		<!-- container -->
@@ -61,9 +65,10 @@
 				<ul class="main-nav nav navbar-nav navbar-right">
 					<li><a href="#home">Home</a></li>
 					<li><a href="#about">About</a></li>
-					<li><a href="#schedule">Schedule</a></li>
+					<li><a href="#workshop">Workshop</a></li>
+					<!-- <li><a href="#schedule">Schedule</a></li> -->
 					<li><a href="#speakers">Speakers</a></li>
-					<li><a href="#sponsors">Sponsors</a></li>
+					<!-- <li><a href="#sponsors">Sponsors</a></li> -->
 					<li><a href="#contact">Contact</a></li>
 					<!-- <li><a href="blog.html">Blog</a></li> -->
 				</ul>
@@ -77,7 +82,7 @@
 	<!-- Home -->
 	<div id="home">
 		<!-- background image -->
-		<div class="section-bg" style="background-image:url(./img/6.jpg)" data-stellar-background-ratio="0.5"></div>
+		<div class="section-bg" style="background-image:url(./img/13.jpg)" data-stellar-background-ratio="0.5"></div>
 		<!-- /background image -->
 
 		<!-- home wrapper -->
@@ -91,8 +96,60 @@
 						<div class="home-content">
 							<h1>All Kerala Industry Applications Society Student Conclave</h1>
 							<!-- <h4 class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4> -->
-							<a href="#" class="main-btn">Register</a>
+							<div class="dis">
+								Don't waste your time....
+							</div>	
+							<a href="https://bit.ly/akiassc19" class="main-btn">Register</a>
 						</div>
+						<br>
+						<br>
+ <div class="count">
+   	  <div class="countd">
+   	  	 <span id="days">00</span>
+   	  	 DAYS
+   	  </div>
+
+   	  <div class="countd">
+   	  	 <span id="hours">00</span>
+   	  	 HOURS
+   	  </div>
+
+   	  <div class="countd">
+   	  	 <span id="minutes">00</span>
+   	  	 MINUTES
+   	  </div>
+
+   	  <div class="countd">
+   	  	 <span id="seconds">00</span>
+   	  	 SECONDS
+   	  </div>
+
+
+  <script type="text/javascript">
+  	
+  		var count = new Date("February 9,2019 10:00:00").getTime();
+  	var x = setInterval(function () {
+      // body...
+     var now = new Date().getTime();
+  		var d = count - now;
+
+  		var days = Math.floor(d/(1000*60*60*24));
+  		var hours =Math.floor((d%(1000*60*60*24))/(1000*60*60));
+  		var minutes = Math.floor((d%(1000*60*60))/(1000*60));
+  		var seconds = Math.floor((d%(1000*60))/1000);
+  		document.getElementById("days").innerHTML = days;
+  		document.getElementById("hours").innerHTML = hours;
+  		document.getElementById("minutes").innerHTML = minutes;
+  		document.getElementById("seconds").innerHTML = seconds;
+
+  		if (d <=0) {
+  			clearInterval(x);
+  		}
+    },1000); 
+
+  </script>
+
+  </div>
 					</div>
 					<!-- /home content -->
 				</div>
@@ -105,7 +162,32 @@
 	<!-- /Home -->
 
 <!--ABOUT START-->
-				<section class="about" id="about">
+        <section class="aboout" id="about"">
+        	<div class="row" style="background-image: url(./img/background02.jpg); ">
+                 <div class="col-sm-5 col-md-6" style="  background: rgba(20,10,15, 0.3); margin-left: 30px; padding: 20px;">
+                 	<h2 class="intro">Why AKIASSC?</h2>
+                 	<p>
+                 	The core aim of conducting AKIASSC19 is to foster technological innovation and
+                    excellence for the benefit of humanity. By conducting different workshops and meetings
+                    with industrial experts, the students can increase their knowledge and technical skills.AKIASSC19 is the best place to show their talents and to develop their technical skills.The 3-day event top up with technical knowledge, managerial activities and an immense platform for networking. The most anticipated first edition of AKIASSC will support professionals engaged in the industries & research institutes of electrical and electronic engineering become a leading provider of scientific and engineering information on industry and its application.
+
+                   </p>
+                 </div>
+                 <div class="col-sm-5 offset-sm-2 col-md-4 offset-md-0" style="background: rgba(20,10,15,0.3); margin-left: 40px; text-align: center; padding: 40px;">
+                   <h2 class="intro">IEEE  IAS  NSSCE</h2>
+                   <p>
+                   	The IAS SB Chapter NSSCE is one of the newly born chapters in Kerala
+					and was inaugurated on 27th March of 2018. The technical inauguration of the IAS SB
+					Chapter ignited the spirit of volunteering and activities of the branch. 
+                   </p>
+                 </div>
+            </div>
+
+        	
+        </section>
+
+
+				<section class="workshop" id="workshop">
 						
 						
 						<div class="ourServices">
@@ -116,28 +198,28 @@
 																<div class="serImg">
 																		<img src="img/1.png" alt="">
 																</div>
-																<h6 class="lead text-uppercase bold">web</h6>
-																<p>Every project is different and that means the approach must be as well.</p>
+																<h6 class="lead text-uppercase bold">PLC And SCADA</h6>
+																<p></p>
 																<a href="#" class="learn">Learn more</a>
 														</div>
 												</div>
 												<div class="col-sm-4">
 														<div class="singleService">
 																<div class="serImg">
-																		<img src="img/2.png" alt="">
+																		<img src="img/1.png" alt="">
 																</div>
-																<h6 class="lead text-uppercase bold">mobile</h6>
-																<p>We help brands connect to their audience through shared values and interests.</p>
+																<h6 class="lead text-uppercase bold">Lighting Design</h6>
+																<p></p>
 																<a href="#" class="learn">Learn more</a>
 														</div>
 												</div>
 												<div class="col-sm-4">
 														<div class="singleService">
 																<div class="serImg">
-																		<img src="img/3.png" alt="">
+																		<img src="img/1.png" alt="">
 																</div>
-																<h6 class="lead text-uppercase bold">digital</h6>
-																<p>We build a team around your needs and provide our clients with direct access to everyone.</p>
+																<h6 class="lead text-uppercase bold">Coming Soon..</h6>
+																<p></p>
 																<a href="#" class="learn">Learn more</a>
 														</div>
 												</div>
@@ -173,18 +255,18 @@
 				<div class="col-md-3 col-sm-6">
 					<div class="speaker" data-toggle="modal" data-target="#speaker-modal-1">
 						<div class="speaker-img">
-							<img src="./img/speaker01.jpg" alt="">
+							<img src="./img/default.png" alt="">
 						</div>
 						<div class="speaker-body">
-							<div class="speaker-social">
+							<!-- <div class="speaker-social">
 								<a href="#"><i class="fa fa-facebook"></i></a>
 								<a href="#"><i class="fa fa-twitter"></i></a>
 								<a href="#"><i class="fa fa-instagram"></i></a>
 								<a href="#"><i class="fa fa fa-linkedin"></i></a>
-							</div>
+							</div> -->
 							<div class="speaker-content">
-								<h2>John Doe</h2>
-								<span>Manager, CEO</span>
+								<h2>Coming Soon..</h2>
+								<!-- <span>Manager, CEO</span> -->
 							</div>
 						</div>
 					</div>
@@ -195,18 +277,18 @@
 				<div class="col-md-3 col-sm-6">
 					<div class="speaker" data-toggle="modal" data-target="#speaker-modal-1">
 						<div class="speaker-img">
-							<img src="./img/speaker02.jpg" alt="">
+							<img src="./img/default.png" alt="">
 						</div>
 						<div class="speaker-body">
-							<div class="speaker-social">
+							<!-- <div class="speaker-social">
 								<a href="#"><i class="fa fa-facebook"></i></a>
 								<a href="#"><i class="fa fa-twitter"></i></a>
 								<a href="#"><i class="fa fa-instagram"></i></a>
 								<a href="#"><i class="fa fa fa-linkedin"></i></a>
-							</div>
+							</div> -->
 							<div class="speaker-content">
-								<h2>John Doe</h2>
-								<span>Manager, CEO</span>
+								<h2>Coming Soon..</h2>
+								<!-- <span>Manager, CEO</span> -->
 							</div>
 						</div>
 					</div>
@@ -217,18 +299,18 @@
 				<div class="col-md-3 col-sm-6">
 					<div class="speaker" data-toggle="modal" data-target="#speaker-modal-1">
 						<div class="speaker-img">
-							<img src="./img/speaker03.jpg" alt="">
+							<img src="./img/default.png" alt="">
 						</div>
 						<div class="speaker-body">
-							<div class="speaker-social">
+							<!-- <div class="speaker-social">
 								<a href="#"><i class="fa fa-facebook"></i></a>
 								<a href="#"><i class="fa fa-twitter"></i></a>
 								<a href="#"><i class="fa fa-instagram"></i></a>
 								<a href="#"><i class="fa fa fa-linkedin"></i></a>
-							</div>
+							</div> -->
 							<div class="speaker-content">
-								<h2>John Doe</h2>
-								<span>Manager, CEO</span>
+								<h2>Coming Soon..</h2>
+								<!-- <span>Manager, CEO</span> -->
 							</div>
 						</div>
 					</div>
@@ -238,25 +320,25 @@
 					<div class="col-md-3 col-sm-4">
 					<div class="speaker" data-toggle="modal" data-target="#speaker-modal-1">
 						<div class="speaker-img">
-							<img src="./img/speaker01.jpg" alt="">
+							<img src="./img/default.png" alt="">
 						</div>
 						<div class="speaker-body">
-							<div class="speaker-social">
+						<!-- 	<div class="speaker-social">
 								<a href="#"><i class="fa fa-facebook"></i></a>
 								<a href="#"><i class="fa fa-twitter"></i></a>
 								<a href="#"><i class="fa fa-instagram"></i></a>
 								<a href="#"><i class="fa fa fa-linkedin"></i></a>
-							</div>
+							</div> -->
 							<div class="speaker-content">
-								<h2>John Doe</h2>
-								<span>Manager, CEO</span>
+								<h2>Coming Soon..</h2>
+								<!-- <span>Manager, CEO</span> -->
 							</div>
 						</div>
 					</div>
 				</div>
 
 				<!-- speaker modal -->
-				<div id="speaker-modal-1" class="speaker-modal modal fade">
+				<!-- <div id="speaker-modal-1" class="speaker-modal modal fade">
 					<div class="modal-dialog">
 						<div class="modal-content">
 							<button type="button" class="speaker-modal-close" data-dismiss="modal"></button>
@@ -307,7 +389,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 				<!-- /speaker modal -->
 			</div>
 			<!-- /row -->
@@ -316,18 +398,18 @@
 				<div class="col-md-3 col-sm-4">
 					<div class="speaker" data-toggle="modal" data-target="#speaker-modal-1">
 						<div class="speaker-img">
-							<img src="./img/speaker01.jpg" alt="">
+							<img src="./img/default.png" alt="">
 						</div>
 						<div class="speaker-body">
-							<div class="speaker-social">
+							<!-- <div class="speaker-social">
 								<a href="#"><i class="fa fa-facebook"></i></a>
 								<a href="#"><i class="fa fa-twitter"></i></a>
 								<a href="#"><i class="fa fa-instagram"></i></a>
 								<a href="#"><i class="fa fa fa-linkedin"></i></a>
-							</div>
+							</div> -->
 							<div class="speaker-content">
-								<h2>John Doe</h2>
-								<span>Manager, CEO</span>
+								<h2>Coming Soon..</h2>
+								<!-- <span>Manager, CEO</span> -->
 							</div>
 						</div>
 					</div>
@@ -337,18 +419,18 @@
 				<div class="col-md-3 col-sm-4">
 					<div class="speaker" data-toggle="modal" data-target="#speaker-modal-1">
 						<div class="speaker-img">
-							<img src="./img/speaker01.jpg" alt="">
+							<img src="./img/default.png" alt="">
 						</div>
 						<div class="speaker-body">
-							<div class="speaker-social">
+							<!-- <div class="speaker-social">
 								<a href="#"><i class="fa fa-facebook"></i></a>
 								<a href="#"><i class="fa fa-twitter"></i></a>
 								<a href="#"><i class="fa fa-instagram"></i></a>
 								<a href="#"><i class="fa fa fa-linkedin"></i></a>
-							</div>
+							</div> -->
 							<div class="speaker-content">
-								<h2>John Doe</h2>
-								<span>Manager, CEO</span>
+								<h2>Coming Soon..</h2>
+								<!-- <span>Manager, CEO</span> -->
 							</div>
 						</div>
 					</div>
@@ -359,18 +441,18 @@
 			<div class="col-md-3 col-sm-4">
 					<div class="speaker" data-toggle="modal" data-target="#speaker-modal-1">
 						<div class="speaker-img">
-							<img src="./img/speaker01.jpg" alt="">
+							<img src="./img/default.png" alt="">
 						</div>
 						<div class="speaker-body">
-							<div class="speaker-social">
+							<!-- <div class="speaker-social">
 								<a href="#"><i class="fa fa-facebook"></i></a>
 								<a href="#"><i class="fa fa-twitter"></i></a>
 								<a href="#"><i class="fa fa-instagram"></i></a>
 								<a href="#"><i class="fa fa fa-linkedin"></i></a>
-							</div>
+							</div> -->
 							<div class="speaker-content">
-								<h2>John Doe</h2>
-								<span>Manager, CEO</span>
+								<h2>Coming Soon..</h2>
+								<!-- <span>Manager, CEO</span> -->
 							</div>
 						</div>
 					</div>
@@ -380,18 +462,18 @@
 			<div class="col-md-3 col-sm-4">
 					<div class="speaker" data-toggle="modal" data-target="#speaker-modal-1">
 						<div class="speaker-img">
-							<img src="./img/speaker01.jpg" alt="">
+							<img src="./img/default.png" alt="">
 						</div>
 						<div class="speaker-body">
-							<div class="speaker-social">
+							<!-- <div class="speaker-social">
 								<a href="#"><i class="fa fa-facebook"></i></a>
 								<a href="#"><i class="fa fa-twitter"></i></a>
 								<a href="#"><i class="fa fa-instagram"></i></a>
 								<a href="#"><i class="fa fa fa-linkedin"></i></a>
-							</div>
+							</div> -->
 							<div class="speaker-content">
-								<h2>John Doe</h2>
-								<span>Manager, CEO</span>
+								<h2>Coming Soon..</h2>
+								<!-- <span>Manager, CEO</span> -->
 							</div>
 						</div>
 					</div>
@@ -502,7 +584,7 @@
 					<div class="cta-content text-center">
 						<h2>Get Ticket Now!</h2>
 						<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						<a href="#" class="main-btn">Register</a>
+						<a href="https://bit.ly/akiassc19" class="main-btn1">Register</a>
 					</div>
 				</div>
 				<!-- /cta content -->
@@ -547,48 +629,100 @@
 		</div>
 		<!-- /container -->
 	</div>
-	<!-- /Galery -->
+	<!-- form-->
 
-   <section class="contactform" id="contactform">
-						<div class="container">
-								<div class="row">
-										<div class="col-lg-12 text-center">
-												<div class="contactInner">
-														<h3 class="magenta light">Have a question? or just say hello!</h3>
-														<div class="contactForm">
-																<form action="#" method="post" id="contactForm">
-																		<div class="row">
-																				<div class="col-sm-6">
-																						<div class="single_form">
-																								<label for="con_name">Name:</label>
-																								<input type="text" name="con_name" id="con_name" class="required">
-																						</div>
-																				</div>
-																				
-																				<div class="col-sm-6">
-																						<div class="single_form">
-																								<label for="con_email">Email:</label>
-																								<input type="email" name="con_email" id="con_email" class="required">
-																						</div>
-																				</div>
-																				
-																				<div class="col-sm-12">
-																						<div class="single_form">
-																								<label for="con_msg">Message:</label>
-																								<textarea id="con_msg" name="con_msg" class="required"></textarea>
-																						</div>
-																				</div>
-																				<div class="col-sm-12 text-center">
-																						<input type="submit" value="SEND" id="con_submit" class="bes_button">
-																				</div>
-																		</div>
-																</form>
-														</div>
+   <!-- <section class="contact" id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<div class="contactInner">
+							<h3 class="magenta light">Have a question? or just say hello!</h3>
+								<div class="contactForm">
+									<form action="#" method="post" id="contactForm">
+										<div class="row">
+											<div class="col-sm-6">
+												<div class="single_form">
+												<label for="con_name">Name:</label>
+												<input type="text" name="con_name" id="con_name" class="required">
 												</div>
+											</div>
+																				
+										    <div class="col-sm-6">
+												<div class="single_form">
+													<label for="con_email">Email:</label>
+													<input type="email" name="con_email" id="con_email" class="required">
+												</div>
+										    </div>
+																				
+											<div class="col-sm-12">
+												<div class="single_form">
+													<label for="con_msg">Message:</label>
+													<textarea id="con_msg" name="con_msg" class="required"></textarea>
+												</div>
+											</div>
+											<div class="col-sm-12 text-center">
+												<input type="submit" value="SEND" id="con_submit" class="bes_button">
+											</div>
 										</div>
+									</form>
 								</div>
 						</div>
-				</section>
+					</div>
+				</div>
+			</div>
+	</section> -->
+	 <section class="contact1" id="contact1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="contactInner">
+                            <h3 class="magenta light">Have a question? or just say hello!</h3>
+                            <div class="contact1Form">
+                                <form action="#" method="post" id="contact1Form">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="single_form">
+                                                <label for="con_name">Name:</label>
+                                                <input type="text" name="name" id="name" class="required"color="##f0ca4d">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="single_form">
+                                                <label for="con_phone">Phone:</label>
+                                                <input type="text" name="phone" id="phone" class="required" color="#FFFFFF">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="single_form">
+                                                <label for="con_email">Email:</label>
+                                                <input type="email" name="email" id="email" class="required" color="#FFFFFF">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="single_form">
+                                                <label for="con_company">College:</label>
+                                                <input type="text" name="company" id="company" class="required" color="#FFFFFF">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="single_form">
+                                                <label for="con_msg">Message:</label>
+                                                <textarea id="msg" name="msg" class="required" color="#FFFFFF"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 text-center">
+
+                                            <input type="submit" value="SEND" id="submit" class="main-btn2" >
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+	<!-- contact form -->
 
 	<!-- Contact -->
 	<div id="contact" class="section">
@@ -606,7 +740,12 @@
 				<div class="col-sm-4">
 					<div class="contact">
 						<h3>Address</h3>
-						<p>2635 Simons Hollow Road, NEW YORK</p>
+						<address class="nobottommargin">
+										
+										NSS College Of Engineering<br>
+										Akathethara, Palakkad P.O. <br>
+										678008<br>
+						</address>
 					</div>
 				</div>
 				<!-- /contact -->
@@ -615,7 +754,9 @@
 				<div class="col-sm-4">
 					<div class="contact">
 						<h3>Phone</h3>
-						<p>570-751-2415</p>
+						 ‭<a href="tel:+91 8086946911">+91 8086946911 </a> <br>
+                         <a href="tel:+91 9946233940">+91 9946233940</a><br>
+						 <a href="tel:+91 8281141744">+91 8281141744</a><br>
 					</div>
 				</div>
 				<!-- /contact -->
@@ -624,7 +765,7 @@
 				<div class="col-sm-4">
 					<div class="contact">
 						<h3>Email</h3>
-						<a href="#">event@support.com</a>
+						<a href="mailto:akiassc@gmail.com"> akiassc@gmail.com </a>
 					</div>
 				</div>
 				<!-- /contact -->
@@ -635,7 +776,11 @@
 		<!-- /container -->
 
 		<!-- Map -->
-		<div id="map"></div>
+		<div class="map-responsive">
+           <iframe src="https://maps.google.com/maps?q=nss college of engineering&t=&z=11&ie=UTF8&iwloc=&output=embed" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+       </div>
+
+	
 		<!-- /Map -->
 	</div>
 	<!-- /Contact -->
@@ -651,7 +796,7 @@
 				<div class="col-md-4 col-md-push-4">
 					<div class="footer-brand">
 						<a class="logo" href="index.html">
-							<img class="logo-img" src="./img/logo.png" alt="logo">
+							<img class="logo-img" src="./img/4.png" alt="logo">
 						</a>
 					</div>
 				</div>
@@ -660,12 +805,12 @@
 				<!-- contact social -->
 				<div class="col-md-4 col-md-push-4">
 					<div class="contact-social">
-						<a href="#"><i class="fa fa-facebook"></i></a>
-						<a href="#"><i class="fa fa-twitter"></i></a>
-						<a href="#"><i class="fa fa-google-plus"></i></a>
-						<a href="#"><i class="fa fa-instagram"></i></a>
-						<a href="#"><i class="fa fa-pinterest"></i></a>
-						<a href="#"><i class="fa fa fa-linkedin"></i></a>
+						<a href="https://www.facebook.com/akiassc/?ref=bookmarks"><i class="fa fa-facebook"></i></a>
+						<a href="https://twitter.com/akiassc"><i class="fa fa-twitter"></i></a>
+						
+						<a href="https://www.instagram.com/akiassc/?hl=en"><i class="fa fa-instagram"></i></a>
+						<!-- <a href="#"><i class="fa fa-pinterest"></i></a>
+						<a href="#"><i class="fa fa fa-linkedin"></i></a> -->
 					</div>
 				</div>
 				<!-- /contact social -->
@@ -673,7 +818,7 @@
 				<!-- copyright -->
 				<div class="col-md-4 col-md-pull-8">
 					<span class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">IEEE SB NSSCE</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
 				</div>
 				<!-- /copyright -->
