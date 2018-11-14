@@ -97,6 +97,7 @@ ul, ol {
   border-radius: 2px;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
+  position: center;
 }
 .main-btn1 {
   display: inline-block;
@@ -553,7 +554,7 @@ h2.intro{
 .speaker {
   position: relative;
   cursor: pointer;
-  margin-bottom: 30px;
+  margin-bottom: 80px;
 }
 
 .speaker:after {
@@ -579,17 +580,17 @@ h2.intro{
 
 .speaker .speaker-body {
   position: absolute;
-  bottom: 60px;
+  bottom: 40px;
   left: 0;
   right: 0;
 }
 
 .speaker .speaker-content {
   position: relative;
-  padding: 30px;
+  padding: 2px;
   background: #f0ca4d;
   text-align: right;
-  z-index: 20;
+  z-index: 10;
 }
 
 .speaker .speaker-content>h2 {
@@ -1234,7 +1235,7 @@ h2.intro{
 
 
 .dis{
-  text-align: right;
+  text-align: center;
   font-family: segoe script;
   font-size: 40px;
 }
