@@ -1299,3 +1299,34 @@ h2.intro{
     width: 250%;
   }
 }
+.singleService1{
+  width: 50px;
+}
+.singleService2{
+  width: 90px;
+}
+.singleService3{
+  width: 100px;
+}
+#preloader  {
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color: #fff;
+     z-index: 99;
+    height: 100%;
+ }
+
+#status  {
+     width: 200px;
+     height: 200px;
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     background: url(https://s17.aconvert.com/convert/p3r68-cdx67/ldt5q-lwe4r.gif);
+     background-repeat: no-repeat;
+     background-position: center;
+     margin: -100px 0 0 -100px;
+ }

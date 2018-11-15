@@ -79,7 +79,9 @@
 		<!-- /container -->
 	</header>
 	<!-- /Header -->
-
+<div id="preloader">
+  <div id="status"></div>
+</div>
 	<!-- Home -->
 	<div id="home">
 		<!-- background image -->
@@ -195,7 +197,7 @@
 								<div class="container">
 										<div class="row">
 												<div class="col-sm-4">
-														<div class="singleService">
+														<div class="singleService1">
 																<div class="serImg">
 																		<img src="img/11.png" alt="">
 																</div>
@@ -205,7 +207,7 @@
 														</div>
 												</div>
 												<div class="col-sm-4">
-														<div class="singleService">
+														<div class="singleService2">
 																<div class="serImg">
 																		<img src="img/12.png" alt="">
 																</div>
@@ -215,7 +217,7 @@
 														</div>
 												</div>
 												<div class="col-sm-4">
-														<div class="singleService">
+														<div class="singleService3">
 																<div class="serImg">
 																		<img src="img/1.png" alt="">
 																</div>
@@ -908,8 +910,8 @@
 								<a href="#"><i class="fa fa fa-linkedin"></i></a>
 							</div>
 							<div class="speaker-content">
-								<h2>Er.Arjun Pandiayan IAS</h2>
-								<span>Asistance Trainee</span>
+								<h2>Er.Arjun Pandiaan IAS</h2>
+								<span>Asistant Collector,Kannur</span>
 							</div>
 						</div>
 					</div>
@@ -1458,7 +1460,7 @@
 			
 				<div class="col-md-4 col-sm-4 col-xs-6">
 					<a href="#" class="sponsor">
-						<img src="./img/logos/" alt="">
+						<img src="./img/logos/ias.png" alt="">
 					</a>
 				</div>
 				
@@ -1771,6 +1773,17 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="js/google-map.js"></script>
 	<script src="js/jquery.countTo.js"></script>
 	<script src="js/main.js"></script>
+	<script type="text/javascript">
+	
+ //makes sure the whole site is loaded
+	jQuery(window).load(function() {
+        // will first fade out the loading animation
+    jQuery("#status").fadeOut();
+        // will fade out the whole DIV that covers the website.
+    jQuery("#preloader").delay(1000).fadeOut("slow");
+})
+
+	</script>
 
 </body>
 
