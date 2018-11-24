@@ -454,6 +454,9 @@ textarea.input {
   text-transform: uppercase;
   color: #0b0f28;
 }
+.ourServices {
+    margin-top: 0px;
+}
 .singleService {
     background: #fff;
     box-shadow: 0 3px 7px rgba(0, 0, 0, .1);
@@ -472,7 +475,44 @@ textarea.input {
     margin-top: -40px;
     box-shadow: 0px 30px 70px rgba(0, 0, 0, .1)
 }
-   
+.serImg {
+    height: 187px;
+    margin: auto;
+    position: relative;
+    top: -42px;
+    width: 187px;
+    background: transparent;
+    border-radius: 50%;
+}
+.serImg img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.singleService h6.lead {
+    line-height: 0.7;
+    margin: 0 0 67px;
+    color: #000;
+}
+.singleService p{
+    font-weight: 300;
+    font-size: 20px;
+}
+.singleService p:last-of-type{
+    margin-bottom: 32px;
+}
+.singleService a.learn{
+    font-size: 15px;
+    line-height: .8;
+    color: #999999;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.singleService a.learn:hover{
+    color: #fd0060;
+}
+
+
 h2.intro{
   
   margin-top: 10px;
@@ -1299,14 +1339,7 @@ h2.intro{
     width: 250%;
   }
 }
-.singleService1{
-  width: 50px;
-}
-.singleService2{
-  width: 90px;
-}
-.singleService3{
-  width: 100px;
+
 }
 #preloader  {
      position: fixed;
