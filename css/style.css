@@ -509,7 +509,7 @@ textarea.input {
     font-weight: 600;
 }
 .singleService a.learn:hover{
-    color: #fd0060;
+    color: #f0ca4d;
 }
 
 
@@ -620,14 +620,14 @@ h2.intro{
 
 .speaker .speaker-body {
   position: absolute;
-  bottom: 40px;
+  bottom: 10px;
   left: 0;
   right: 0;
 }
 
 .speaker .speaker-content {
   position: relative;
-  padding: 2px;
+  padding: 0px;
   background: #f0ca4d;
   text-align: right;
   z-index: 10;
@@ -1363,3 +1363,57 @@ h2.intro{
      background-position: center;
      margin: -100px 0 0 -100px;
  }
+
+ /* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #f0ca4d;
+    color: #000000;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
