@@ -1334,26 +1334,27 @@ h2.intro{
 }
 
 #preloader  {
-     position: fixed;
+     position: relative;
      top: 0;
      left: 0;
      right: 0;
      bottom: 0;
+
      background-color: #000000;
      z-index: 99;
     height: 100%;
  }
 
 #status  {
-     width: 200px;
-     height: 200px;
+     width: 300px;
+     height: 300px;
      position: absolute;
      left: 50%;
      top: 50%;
      background-image: url(loader.gif);
      background-repeat: no-repeat;
      background-position: center;
-     margin: -100px 0 0 -100px;
+     margin: -150px 0 0 -150px;
  }
 
 
