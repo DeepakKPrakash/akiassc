@@ -42,12 +42,13 @@ function myFunction() {
 			  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 			<![endif]-->
 	<link rel="stylesheet" type="text/css" href="style2.css">	
-	</head>	
-<body>
+	</head>
 	<div id="preloader">
   		<div id="status" ><img src="loader.gif" style="margin-top: -100px; margin-left: -180px;" >
   		</div>
-	</div>
+	</div>	
+<body>
+	
 
 	
 	<!-- Header -->
@@ -110,7 +111,7 @@ function myFunction() {
 					<!-- home content -->
 					<div class="col-md-8 col-md-offset-2">
 						<div class="home-content">
-							<h1 style=" color: #f0ca4d ; font-weight : bold; ">All Kerala Industry Applications Society Student Conclave</h1>
+							<h1 style=" color: #f0ca4d ; font-weight : bold; margin-top: 10px; ">All Kerala Industry Applications Society Student Conclave</h1>
 							<!-- <h4 class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4> -->
 							<div class="dis" style="padding-top: 20px; color: white">
 								Don't waste your time....
@@ -202,7 +203,7 @@ function myFunction() {
         	
         </section>
 
-				<section class="Workshops" id="Workshops">
+		<section class="Workshops" id="Workshops">
 				  <div class="ourServices">
                 <div class="container">
                     <div class="row">
@@ -249,7 +250,7 @@ function myFunction() {
                                 <h6 class="lead text-uppercase bold">Project Management</h6>
                                 <div>
                                 <p >
-                                	Enable students and young engineers with basics of project management principles and practices adopted to lead a successful professional career. Activity oriented training and workshop.
+                                	Enable students and young engineers with basics of project management principles and practices adopted to lead a successful professional career. Activity oriented training and workshop.<br><br><br>
                                 </p>
                                 </div>
                                 
@@ -262,7 +263,7 @@ function myFunction() {
             </div>		
 						
 
-				</section>
+		</section>
 				<!--ABOUT END-->
 
 	<!-- Speakers -->
@@ -274,7 +275,7 @@ function myFunction() {
 			<div class="row">
 				<!-- section title -->
 				<div class="section-title">
-					<h3 class="title"><span>Our</span> <span style="color: #f0ca4d;">Special Guests</span></h3>
+					<h3 class="title"><span>Our</span> <span style="color: #f0ca4d; ">Guests</span></h3>
 				</div>
 				<!-- section title -->
 
@@ -1588,6 +1589,7 @@ function myFunction() {
 				</div>
 			</div>
 	</section> -->
+	
 	 <section class="contact1" id="contact1">
             <div class="container">
                 <div class="row">
@@ -1762,12 +1764,26 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script type="text/javascript">
 		// makes sure the whole site is loaded
 	jQuery(window).load(function() {
+		
         // will first fade out the loading animation
-    jQuery("#status").fadeOut("slow");
-        // will fade out the whole DIV that covers the website.
-    jQuery("#preloader").delay(900).fadeOut("slow");
-	})
+        //document.getElementById('home').scrollIntoView();
+        
+      
+    jQuery("#status").fadeOut("slow",function(){$('html, body').css({
+    overflow: 'auto',
+    height: 'auto'
+});});
 
+        // will fade out the whole DIV that covers the website.
+    jQuery("#preloader").delay(400).fadeOut("slow");
+    
+    
+	});
+
+$('html, body').css({
+    overflow: 'hidden',
+    height: '100%'
+});
 	</script>
 	
 </body>

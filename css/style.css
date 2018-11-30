@@ -632,7 +632,9 @@ h2.intro{
   padding: 0px;
   background: #f0ca4d;
   text-align: right;
+  padding-right: 10px;
   z-index: 10;
+  font-family: 'century Gothic';
 }
 
 .speaker .speaker-content>h2 {
@@ -1365,8 +1367,3 @@ h2.intro{
      margin: -150px 0 0 -150px;
  }
 
-.xop-section{
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 
-}
