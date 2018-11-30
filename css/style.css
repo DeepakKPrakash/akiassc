@@ -187,8 +187,8 @@ textarea.input {
   transform: translateY(100%);
   display: inline-block;
   z-index: 10;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .section-title .title>span.appear {
