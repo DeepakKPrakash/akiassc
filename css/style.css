@@ -476,6 +476,7 @@ textarea.input {
     width: 187px;
     background: transparent;
     border-radius: 50%;
+    border-color: rgba(0,0,0,0.2);
 }
 .serImg img{
     width: 100%;
