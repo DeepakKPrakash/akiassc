@@ -187,8 +187,8 @@ textarea.input {
   transform: translateY(100%);
   display: inline-block;
   z-index: 10;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 
 .section-title .title>span.appear {
@@ -623,7 +623,7 @@ h2.intro{
 
 .speaker .speaker-body {
   position: absolute;
-  bottom: 10px;
+  bottom: 0px;
   left: 0;
   right: 0;
 }
@@ -636,14 +636,17 @@ h2.intro{
   padding-right: 10px;
   z-index: 10;
   font-family: 'century Gothic';
+  
 }
 
 .speaker .speaker-content>h2 {
   color: #FFF;
+  font-size: 25px;
 }
 
 .speaker .speaker-content>span {
   color: #fff;
+  padding-top: -350px;
 }
 
 .speaker .speaker-social {
