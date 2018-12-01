@@ -626,6 +626,8 @@ h2.intro{
   bottom: 0px;
   left: 0;
   right: 0;
+  height: 10px;
+  /*margin-bottom: 10px;*/
 }
 
 .speaker .speaker-content {
@@ -633,7 +635,9 @@ h2.intro{
   padding: 0px;
   background: #f0ca4d;
   text-align: right;
+  /*line-height: 0.8px;*/
   padding-right: 10px;
+
   z-index: 10;
   font-family: 'century Gothic';
   
@@ -642,11 +646,13 @@ h2.intro{
 .speaker .speaker-content>h2 {
   color: #FFF;
   font-size: 25px;
+ 
 }
 
 .speaker .speaker-content>span {
   color: #fff;
   padding-top: -350px;
+
 }
 
 .speaker .speaker-social {
