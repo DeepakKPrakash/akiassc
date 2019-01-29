@@ -1397,9 +1397,6 @@ h2.intro{
     border-color: #f0ca4d;
 }
 
-section {
-    padding: 60px 0;
-}
 
 
 #team .card {
@@ -1498,9 +1495,4 @@ section {
     width: 220px;
     height: 220px;
     border-radius: 60%;
-}
-.backside  {
-    width: 320px;
-    height: 220px;
-    
 }
