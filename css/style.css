@@ -87,6 +87,19 @@ ul, ol {
   list-style: none
 }
 
+.main-btn7 {
+  display: inline-block;
+  padding: 14px 50px;
+  background: #f0ca4d;
+  color: #FFF;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 2px;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  margin: auto;
+}
+
 .main-btn {
   display: inline-block;
   padding: 14px 50px;
@@ -98,6 +111,7 @@ ul, ol {
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
   position: center;
+  padding-left: -30px;
 }
 .main-btn1 {
   display: inline-block;
